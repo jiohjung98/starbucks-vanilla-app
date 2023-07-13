@@ -19,7 +19,6 @@ searchInputEl.addEventListener('blur', function () {
   searchInputEl.setAttribute('placeholder', '')
 })
 
-
 /**
  * 올해가 몇 년도인지 계산
  */
