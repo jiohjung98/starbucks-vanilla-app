@@ -1,0 +1,90 @@
+.signin {
+    margin-top: 120px;
+    padding: 100px 0 150px; /* 값이 3개면 각각 상, 중, 하를 의미 */
+    background-image: url("../images/signin_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.signin h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.signin__card { /* sigin의 card 부분을 의미 */
+    width: 500px;
+    margin: 0 auto; /* 값이 두개면 각각 위아래, 좌우 */
+    border-radius: 6px;
+    background-color: #F6F5F0;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .3); /* x축으로 2px, y축으로 2px 이동해서 20px의 블러처리 효과를 줌 */
+    color: #555;
+}
+
+.signin__card h2 { /* card내부의 후손선택자 h2 */
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.signin__card h2 strong{ /* card내부의 후손선택자 h2 */
+    font-weight: 700;
+    color: #006633;
+}
+
+.signin__card form {
+    padding: 30px 22px; /* 좌우로 30px, 위아래로 22px 내부 여백 */
+}
+
+.signin__card form input { /* input 요소 3개: id, pw, submit */
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.signin__card form [type="submit"] { /* 속성선택자: type이라는 속성이 submit 요소를 선택 */
+    background-color: #006633;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.signin__card form p {
+    font-size: 12px;
+    color: #006633;
+    text-align: center;
+}
+
+.signin__card .actions {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.signin__card .actions a {
+    flex-grow: 1; /* 증가너비가 1비율 */ 
+    flex-basis: 0; /* 기본너비는 0 */
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 14px;
+    border-right: 1px solid #ddd;
+}
+
+.signin__card .actions a:last-child {
+    border-right: none;
+}
+
+.signin__card .actions a:hover{ /* 가상클래스 선택자 hover: 각각에 마우스를 올리면 언더라인 주기 */
+    text-decoration: underline;
+}
